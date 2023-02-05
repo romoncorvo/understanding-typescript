@@ -1,19 +1,12 @@
-function add(n1: number, n2: number) {
-  return n1 + n2;
+let userInput: unknown;
+let userName: string;
+
+userInput = 5;
+userInput = 'rodrigo';
+
+if (typeof userInput === 'string') {
+  userName = userInput;
+  console.log(userName);
 }
 
-function printResult(num: number) {
-  console.log(`Result: ${num}`);
-}
-
-function addAndHandle(n1: number, n2: number, cb: (num: number) => void) {
-  const result = n1 + n2;
-  cb(result);
-}
-
-printResult(add(1, 2));
-
-addAndHandle(8, 2, printResult);
-addAndHandle(1, 20, (result) => {
-  console.log(result + 5);
-});
+console.log(userInput);
