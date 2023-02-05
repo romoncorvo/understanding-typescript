@@ -10,3 +10,9 @@ if (typeof userInput === 'string') {
 }
 
 console.log(userInput);
+
+function generateError(message: string, code: number) {
+  throw new Error(`${message} with error code ${code}`);
+}
+
+generateError('An error occurred', 500);
