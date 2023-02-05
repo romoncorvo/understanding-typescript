@@ -3,7 +3,7 @@ const person: {
   age: number;
 } = {
   name: 'Rodrigo',
-  age: 29,
+  age: 29
 };
 
 console.log(person.name);
