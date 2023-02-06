@@ -1,18 +1,8 @@
-let userInput: unknown;
-let userName: string;
+const button = document.querySelector('button');
 
-userInput = 5;
-userInput = 'rodrigo';
-
-if (typeof userInput === 'string') {
-  userName = userInput;
-  console.log(userName);
+function clickHandler(message: string) {
+  console.log(`clicked ${message}`);
 }
-
-console.log(userInput);
-
-function generateError(message: string, code: number) {
-  throw new Error(`${message} with error code ${code}`);
+if (button) {
+  button.addEventListener('click', clickHandler.bind(null, 'the button'));
 }
-
-generateError('An error occurred', 500);
