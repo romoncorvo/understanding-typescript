@@ -1,18 +1,18 @@
-let userInput: unknown;
-let userName: string;
+// let userInput: unknown;
+// let userName: string;
 
-userInput = 5;
-userInput = 'rodrigo';
+// userInput = 5;
+// userInput = 'rodrigo';
 
-if (typeof userInput === 'string') {
-  userName = userInput;
-  console.log(userName);
-}
+// if (typeof userInput === 'string') {
+//   userName = userInput;
+//   console.log(userName);
+// }
 
-console.log(userInput);
+// console.log(userInput);
 
-function generateError(message: string, code: number) {
-  throw new Error(`${message} with error code ${code}`);
-}
+// function generateError(message: string, code: number) {
+//   throw new Error(`${message} with error code ${code}`);
+// }
 
-generateError('An error occurred', 500);
+// generateError('An error occurred', 500);

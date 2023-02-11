@@ -10,21 +10,21 @@
 //   role: [2, 'author']
 // };
 
-enum Role {
-  ADMIN,
-  READ_ONLY,
-  AUTHOR
-}
+// enum Role {
+//   ADMIN,
+//   READ_ONLY,
+//   AUTHOR
+// }
 
-const person = {
-  name: 'Rodrigo',
-  age: 29,
-  hobbies: ['Sports', 'Cooking'],
-  role: Role.AUTHOR
-};
+// const person = {
+//   name: 'Rodrigo',
+//   age: 29,
+//   hobbies: ['Sports', 'Cooking'],
+//   role: Role.AUTHOR
+// };
 
-console.log(person);
+// console.log(person);
 
-person.hobbies.forEach((hobby) => {
-  console.log(hobby.toUpperCase());
-});
+// person.hobbies.forEach((hobby) => {
+//   console.log(hobby.toUpperCase());
+// });

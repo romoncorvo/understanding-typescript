@@ -1,17 +1,17 @@
-class Department {
-  name: string;
+// class Department {
+//   name: string;
 
-  constructor(name: string) {
-    this.name = name;
-  }
+//   constructor(name: string) {
+//     this.name = name;
+//   }
 
-  describe(this: Department) {
-    console.log(`Department: ${this.name}`);
-  }
-}
-const accounting = new Department('Accounting');
-accounting.describe();
+//   describe(this: Department) {
+//     console.log(`Department: ${this.name}`);
+//   }
+// }
+// const accounting = new Department('Accounting');
+// accounting.describe();
 
-const accountingCopy = { name: 'Test', describe: accounting.describe };
+// const accountingCopy = { name: 'Test', describe: accounting.describe };
 
-accountingCopy.describe();
+// accountingCopy.describe();
