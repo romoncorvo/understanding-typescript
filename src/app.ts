@@ -45,3 +45,27 @@ function extractAndConvert<T extends object, U extends keyof T>(
 }
 
 console.log(extractAndConvert({ name: 'rodrigo' }, 'name'));
+
+class List<T extends string | number | boolean> {
+  private list: T[] = [];
+
+  addItem(item: T) {
+    this.list.push(item);
+  }
+
+  removeItem(item: T) {
+    const index = this.list.indexOf(item);
+    if (index > -1) {
+      this.list.splice(index, 1);
+    }
+  }
+
+  getList() {
+    return [...this.list];
+  }
+}
+
+const myList = new List<string>();
+myList.addItem('hi');
+myList.addItem('there!');
+console.log(myList.getList());
